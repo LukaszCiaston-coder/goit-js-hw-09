@@ -18,3 +18,11 @@
     startButton.disabled = false;
     clearInterval(intervalId);
   });
+   
+const container = document.createElement('div');
+    container.classList.add('container');
+    const startBut = document.querySelector('[data-start]');
+    const stopBut = document.querySelector('[data-stop]');
+    container.appendChild(startBut);
+    container.appendChild(stopBut);
+    document.body.insertBefore(container, document.body.secondChild);
